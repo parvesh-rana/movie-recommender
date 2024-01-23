@@ -1,0 +1,125 @@
+body {
+    background-color: beige;
+    color: brown;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    }
+#header {
+    text-align: center;
+}
+#message {
+    color: yellow;
+}
+h1 {
+    text-align: center;
+    display: inline-block;
+}
+#qq {
+    text-align: center;
+}
+#qfield {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: red;
+
+    width: 60%;
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+
+    height: 40px;
+    font-size: 22px;
+
+    border: solid 1px #999;
+    color: "#333";
+
+    padding-left: 5px;
+
+    /*background-image: url('/static/search.png');*/
+    background-repeat: no-repeat;
+    background-position: left center;
+    outline: 0;
+  }
+#movielist {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(8, 1fr);
+}
+@media screen {
+#movieList {
+   grid-template-columns: 1fr;
+}
+}
+@media screen and (min-width: 300px) {
+#movieList {
+   grid-template-columns: repeat(2, 1fr);
+}
+}
+@media screen and (min-width: 500px) {
+#movieList {
+   grid-template-columns: repeat(4, 1fr);
+}
+}
+@media screen and (min-width: 800px) {
+#movieList {
+   grid-template-columns: repeat(6, 1fr);
+}
+}
+@media screen and (min-width: 1200px) {
+#movieList {
+   grid-template-columns: repeat(8, 1fr);
+}
+}
+@media screen and (min-width: 1600px) {
+#movieList {
+   grid-template-columns: repeat(10, 1fr);
+}
+}
+.rel_infos {
+    padding-left: 5px;
+}
+.rel-movie {
+    height: 350px;
+    padding: 0;
+    background-color: black;
+}
+.rel_movie a {
+    color: yellow;
+}
+.rel_year {
+    display: inline-block;
+    margin-right: 10px;
+}
+/* .rel_genre {
+    display: inline-block;
+} */
+#footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#options {
+    text-align: center;
+}
+.optselect {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+.btn_selected {
+    background-color: #cc0;
+    color: #fff;
+}
+#noResultsError {
+    color: yellow;
+    text-align: center;
+    font-size: 14px;
+}
