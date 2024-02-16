@@ -6,15 +6,15 @@ Hi everyone, this is my side project which is basically a movie-recommendation w
 You can search any movie(before 2017) on search bar and if you find your movie in search results then you can simply click on it and here you are at the webpage which contains 40 movies that you will find most similar to your searched movie 
 # Dataset
 The dataset is of 13000 movies whose columns are :
-'Release Year'
-'Title'
-'Cast'
-'Wiki Page'
-'Plot'
-'plot_length'
-'text'
-'embeddings'
-'Poster'
+'Release Year'  
+'Title'  
+'Cast'  
+'Wiki Page'  
+'Plot'  
+'plot_length'  
+'text'  
+'embeddings'  
+'Poster'  
 [https://huggingface.co/datasets/vishnupriyavr/wiki-movie-plots-with-summaries-faiss-embeddings](url)
 
 # working
