@@ -18,7 +18,7 @@ The dataset is of 13000 movies whose columns are :
 [Dataset Link ](https://huggingface.co/datasets/vishnupriyavr/wiki-movie-plots-with-summaries-faiss-embeddings)
 
 # working
-I took inspiration of this project from Andrej Karpathy's project (https://awesome-movies.life) which is just the same except his movie dataset is new. So here is how this works 
+I took inspiration of this project from [Andrej Karpathy's](https://github.com/karpathy) project (https://awesome-movies.life) which is just the same except his movie dataset is new. So here is how this works 
 1. The similar movies are sorted on the basis of vector embeddings which are created using openai embedding api , if you don't know the embeddings this is a vector of around ~ 800 dimensions which is kind of representation of the movie summery but in numbers so that computer can easily find similar movies
 2. Each 13000 movie in dataset has it's unique vector embeddings and based on that we can easily find similar movies using a method called cosine similaritis which is available in scikit-learn.
 3. The cosine similarity matrix is a matrix of dimensions (13000*13000) here each row is 13000 dimension vector and it signifies the most similar movie index in decreasing order . for example the 1st row's 1st element is the 1st movie of the dataset because it is the most similar movie the itself and likewise the 2nd element is the movie which is most similar to it after that and so on
